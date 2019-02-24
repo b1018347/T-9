@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+body {
+  margin: 0;
+  font-family: "Josefin Sans", cursive;
+}
+
+.display {
+  background: #fcfcfc;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.display div {
+  padding: 10px;
+  font-family: inherit;
+  background: #fcfcfc;
+  border: none;
+  resize: none;
+  font-size: 20px;
+  flex: 1;
+  caret-color: black;
+}
+
+.caret {
+  font-weight: bold;
+  animation: flash linear 1s infinite;
+}
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+.suggestions {
+  border-top: 2px solid #e3e3e3;
+  border-bottom: 2px solid #e3e3e3;
+  font-size: 16px;
+  height: 50px;
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+}
+.suggestion {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.suggestion:active {
+  background: #ddd;
+}
+
+.suggestion:not(:last-child) {
+  border-right: 2px solid #e3e3e3;
+}
+
+.phone {
+  border: 10px solid black;
+  border-radius: 10px;
+  background: #fcfcfc;
+  width: 500px;
+  display: block;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 550px) {
+  .phone {
+    width: 100%;
+    border: none;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.phone__buttons {
+  margin: 20px 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.phone__button button {
+  background: #fcfcfc;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+}
+
+.phone__button button div:nth-child(1) {
+  color: #0288d1;
+  font-size: 36px;
+}
+
+.phone__button button div:nth-child(2) {
+  text-transform: uppercase;
+}
+
+.phone__button button:active {
+  background: #ddd;
+}

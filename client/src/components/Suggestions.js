@@ -2,7 +2,7 @@ import React from 'react';
 
 const Suggestions = props => {
   return (
-    <div className="Suggestions">
+    <div className="suggestions">
       {props.suggestions.map((word, i) => (
         <span
           onClick={() => props.onClickWord(word)}
