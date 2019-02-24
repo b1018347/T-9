@@ -2,6 +2,7 @@
 
 Text input inspired by phones of old.
 
+![example](https://github.com/b1018347/T-9/blob/master/t-9.gif)
 
 ### Front end
 Created using create-react-app, integration tests using jest and enzyme.
