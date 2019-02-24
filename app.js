@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const  t9 = require('t9-rest-api');
 const app = express();
-const port = 3000 || process.env.PORT;
+const port = 5000 || process.env.PORT;
 
 app.use(cors());
 app.use('/api/words', t9);
